@@ -9,7 +9,9 @@
 // (JPEG bytes under a .png name, which the gate accepts); this
 // program copies it byte for byte and then reads it back to check
 // the gates itself, so a swapped or oversized file fails here
-// instead of at grading time.
+// instead of at grading time. The copy is the whole job: no
+// resizing, no recompression, nothing that could soften the
+// painting's edges or shift its colours on the way out.
 
 import { copyFileSync, mkdirSync, readFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';

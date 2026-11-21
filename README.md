@@ -12,7 +12,7 @@ A tiny Node program that delivers one travel poster to `/output/entry.png`: **NI
 node main.ts
 ```
 
-It writes `entry.png` into `$MAKEFUN_OUTPUT_DIR` (or `/output` when the variable is unset). The poster itself is a painted illustration in a classic travel-poster manner — flat colour, a deliberate amber-and-teal palette, and the name given the whole sky to sit in — made for this bounty; the village, its tower and its sea of clouds belong to no real place.
+It writes `entry.png` into `$MAKEFUN_OUTPUT_DIR` (or `/output` when the variable is unset), and every run produces exactly the same bytes — the program is deterministic and never touches the image itself. The poster itself is a painted illustration in a classic travel-poster manner — flat colour, a deliberate amber-and-teal palette, and the name given the whole sky to sit in — made for this bounty; the village, its tower and its sea of clouds belong to no real place.
 
 ---
 
